@@ -1,8 +1,10 @@
 import { Clock } from "./clock";
 import { Marquee } from "./marquee";
+import { Grid } from "./grid";
+import { Heading } from "./heading";
 
 import { reveal } from "./helpers/reveal";
-import { Grid } from "./grid";
+
 
 const clock = new Clock(".home_clock");
 
@@ -13,4 +15,8 @@ marqueeElements.forEach(
 
 const grid = new Grid();
 
+document.fonts.ready.then(() => {
+  console.log("Fonts are loaded");
+  const heading = new Heading(document.querySelector(".hero_h1"));
+});
 reveal();

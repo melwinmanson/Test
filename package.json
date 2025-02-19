@@ -12,6 +12,7 @@
     "esbuild": "0.25.0"
   },
   "dependencies": {
-    "gsap": "^3.12.7"
+    "gsap": "^3.12.7",
+    "split-type": "^0.3.4"
   }
 }
